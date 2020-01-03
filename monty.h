@@ -26,9 +26,9 @@
  */
 typedef struct stack_s
 {
-int n;
-struct stack_s *prev;
-struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /* STRUCT #2 */
@@ -43,8 +43,27 @@ struct stack_s *next;
  */
 typedef struct instruction_s
 {
-char *opcode;
-void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 #endif /* MONTY_STRUCT */
+
+#ifndef VALIDATOR
+#define VALIDATOR
+
+/**
+ * struct validator - return value of opcode and if list is stack or queue
+ * @opcode: return value of opcode
+ * @queue_value: 1 if list is a queue, 0 if list is a stack
+ */
+
+typedef struct validator
+{
+	int opcode;
+	int queue_value;
+} validator_t;
+
+extern validator_t rq;
+
+#endif /* VALIDATOR */

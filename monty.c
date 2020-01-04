@@ -30,6 +30,18 @@ int main(int argc, char **argv)
 
 	while (read != -1)
 	{
-		command = find(line, &stack, n_line)
+		/* command = find(line, &stack, n_line); */
+		if (strcmp(command, "nop"))
+			opc(command, &stack,n_line);
+
+		if (rq.opcode != 0)
+			kill_free(line, file, stack);
+
+		n_line++;
+		read = getline(&file, &size, file);
 	}
+	kill_stack(stack);
+	free(line);
+	fclose(file);
+	return (0);
 }

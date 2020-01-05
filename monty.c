@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 	FILE *file;
-	char *line, *command;
+	char *line = NULL, *command;
 	size_t size = 0, n_line = 1;
 	stack_t *stack = NULL;
 	ssize_t read = 0;

@@ -53,7 +53,8 @@ void _div(stack_t **stack, unsigned int n_line)
  * mul - Multiply the top two values of the stack
  * @stack: Double pointer to the top of the stack
  * @n_line: The line the command was found in the monty file
- **/
+ */
+
 void mul(stack_t **stack, unsigned int n_line)
 {
 	stack_t *tmp;
@@ -66,6 +67,33 @@ void mul(stack_t **stack, unsigned int n_line)
 	if (rq.opcode != 1)
 	{
 		tmp->next->n *= tmp->n;
+		pop(stack, n_line);
+	}
+}
+
+/**
+ * mod - Mod the second element of the stack
+ * @stack: Double pointer to the top of the stack
+ * @n_line: The line the command was found in the monty file
+ */
+
+void mod(stack_t **stack, unsigned int n_line)
+{
+	stack_t *tmp;
+	tmp = *stack;
+	if (tmp == NULL || tmp->next == NULL)
+	{
+		printf("L%u: can't mod, stack too short\n", n_line);
+		rq.opcode = 1;
+	}
+	if (tmp != NULL && tmp->n == 0 && rq.opcode != 1)
+	{
+		printf("L%u: division by zero\n", n_line);
+		rq.opcode = 1;
+	}
+	if (rq.opcode != 1)
+	{
+		tmp->next->n %= tmp->n;
 		pop(stack, n_line);
 	}
 }

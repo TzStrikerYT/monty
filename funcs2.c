@@ -97,3 +97,33 @@ void mod(stack_t **stack, unsigned int n_line)
 		pop(stack, n_line);
 	}
 }
+
+/**
+ * pchar - Print out the element of the code
+ * @stack: Double pointer to the top of the stack
+ * @n_line: The line that the command was found in the file
+ */
+
+void pchar(stack_t **stack, unsigned int n_line)
+{
+	if (*stack != NULL)
+	{
+		if ((*stack)->n < 0 || (*stack)->n > 127)
+		{
+			printf("L%u: can't pchar, value out of range\n",
+			       n_line);
+
+			rq.opcode = 1;
+		}
+		if (rq.opcode == 0)
+		{
+			putchar((*stack)->n);
+			putchar('\n');
+		}
+	}
+	else
+	{
+		printf("L%u: can't pchar, stack empty\n", n_line);
+		rq.opcode = 1;
+	}
+}

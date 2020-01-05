@@ -17,8 +17,8 @@ int check_opcode(char *command, stack_t **stack, size_t n_line)
 	instruction_t opcodes[] = {
 		/*{"rotr", rotr},
 		{"rotl", rotl},
-		{"pstr", pstr},
-		{"pchar", pchar},*/
+		{"pstr", pstr},*/
+		{"pchar", pchar},
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},

@@ -2,7 +2,7 @@
 
 /**
  * sub - Substract the top element of the stack
- * @stack of the stack
+ * @stack: of the stack
  * @n_line: the line the command was found
  */
 
@@ -23,15 +23,16 @@ void sub(stack_t **stack, unsigned int n_line)
 }
 
 /**
- * div - Divide the second element of the stack by the first element of the
- * stack
+ * _div - Divide the second element of the stack
  * @stack: Double pointer to the top of the stack
  * @n_line: The line the command was found in the monty file
  **/
 void _div(stack_t **stack, unsigned int n_line)
 {
 	stack_t *tmp;
+
 	tmp = *stack;
+
 	if (tmp == NULL || tmp->next == NULL)
 	{
 		printf("L%u: can't div, stack too short\n", n_line);
@@ -58,7 +59,9 @@ void _div(stack_t **stack, unsigned int n_line)
 void mul(stack_t **stack, unsigned int n_line)
 {
 	stack_t *tmp;
+
 	tmp = *stack;
+
 	if (tmp == NULL || tmp->next == NULL)
 	{
 		printf("L%u: can't mul, stack too short\n", n_line);
@@ -80,7 +83,9 @@ void mul(stack_t **stack, unsigned int n_line)
 void mod(stack_t **stack, unsigned int n_line)
 {
 	stack_t *tmp;
+
 	tmp = *stack;
+
 	if (tmp == NULL || tmp->next == NULL)
 	{
 		printf("L%u: can't mod, stack too short\n", n_line);

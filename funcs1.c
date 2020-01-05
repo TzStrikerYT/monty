@@ -27,7 +27,7 @@ void pall(stack_t **stack, unsigned int n_line)
 
 void pint(stack_t **stack, unsigned int n_line)
 {
-	if (stack == NULL)
+	if (*stack == NULL)
 	{
 		printf("L%u: can't pint, stack empty\n", n_line);
 		rq.opcode = 1;

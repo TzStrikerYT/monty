@@ -27,8 +27,8 @@ int check_opcode(char *command, stack_t **stack, size_t n_line)
 		/*{"sub", sub},
 		{"mul", mul},
 		{"div", _div},
-		{"mod", mod},
-		{NULL, NULL}*/
+		{"mod", mod},*/
+		{NULL, NULL}
 	};
 
 	size_t i = 0;

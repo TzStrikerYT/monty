@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	ssize_t read = 0;
 
 	if (argc != 2)
-		printf("usage: monty file\n"), exit(EXIT_FAILURE);
+		printf("USAGE: monty file\n"), exit(EXIT_FAILURE);
 
 	file = fopen(argv[1], "r");
 

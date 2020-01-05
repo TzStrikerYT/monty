@@ -88,4 +88,5 @@ void sub(stack_t **stack, unsigned int n_line);
 void mul(stack_t **stack, unsigned int n_line);
 void mod(stack_t **stack, unsigned int n_line);
 void pchar(stack_t **stack, unsigned int n_line);
+void pstr(stack_t **stack, unsigned int n_line);
 #endif /* Functions */

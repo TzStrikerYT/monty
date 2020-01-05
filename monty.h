@@ -67,3 +67,20 @@ typedef struct validator
 extern validator_t rq;
 
 #endif /* VALIDATOR */
+
+#ifndef FUNCTIONS
+#define FUNCTIONS
+
+char *find_co(char *line, stack_t **stack, unsigned int n_line);
+int isnumber(char *str);
+void add_node(stack_t **stack, int value);
+void add_node_end(stack_t **stack, int value);
+int check_opcode(char *command, stack_t **stack, size_t n_line);
+void kill_free(char *line, FILE *file, stack_t *stack);
+void kill_stack(stack_t *stack);
+void pall(stack_t **stack, unsigned int n_line);
+void pint(stack_t **stack, unsigned int n_line);
+void pop(stack_t **stack, unsigned int n_line);
+void swap(stack_t **stack, unsigned int n_line);
+void add(stack_t **stack, unsigned int n_line);
+#endif /* Functions */

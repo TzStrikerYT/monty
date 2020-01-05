@@ -22,13 +22,13 @@ void kill_free(char *line, FILE *file, stack_t *stack)
  * Return: Void function.
  */
 
-void kill_stack(stack *stack)
+void kill_stack(stack_t *stack)
 {
-	stack *kill_node;
+	stack_t *kill_node;
 
 	while (stack != NULL)
 	{
-		kill_node;
+		kill_node = stack;
 		stack = stack->next;
 		free(kill_node);
 	}

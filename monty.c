@@ -58,13 +58,13 @@ char *find_co(char *line, stack_t **stack, unsigned int n_line)
 {
 	char *command, *pusharg;
 
-	command = strtok(line, "\n \t\r");
+	command = strtok(line, " \n\t");
 	if (command == NULL || command[0] == '#')
 		command = "nop";
 	if (strcmp(command, "push") == 0)
 	{
 		command = "nop";
-		pusharg = strtok(NULL, "\n \t\r");
+		pusharg = strtok(NULL, " \n\t");
 		if (isnumber(pusharg) == 0)
 		{
 			if (rq.queue_value == 0)

@@ -6,6 +6,8 @@
 ## [](https://github.com/TzStrikerYT/monty)Description
 
 
+Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+
 ## Learning objectives
 
 -   What do LIFO and FIFO mean.
@@ -122,3 +124,7 @@ $
 ## Contribution
 This is a project for [Holberton School](https://www.holbertonschool.com/) by Holberton Students. Pull requests are welcome, if you found a bug, you can report us at the email: [1264@holbertonschool.com](mailto:1264@holbertonschool.com) or [970@holbertonschool.com](mailto:970@holbertonschool.com).
 Please make sure to update tests as appropriate.
+
+## Authors
+-   [Michael Orlando Cocuy Garzon](https://github.com/TzStrikerYT) - 1264@holbertonschool.com
+-   [Lady Marcela Sánchez Moreno](https://github.com/marcewp15) - 970@holbertonschool.com

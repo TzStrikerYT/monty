@@ -123,6 +123,16 @@ $
 ## File descriptor
 
 
+|file|description|
+|--|--|
+|*monty.h*|Contain the struct and prototypes to the monty interpreter|
+|*monty.c*|Contain the main function of the monty interpreter|
+|*killers.c*|Contain the functions that frees and exit the process in the monty interpreter.|
+|*funcs1.c*|Contain the content of the functions pall, pint, pop, swap and add of the monty interpreter.|
+|*funcs2.c*|Contain the content of the functions sub, div, mul, mod and pchar of the monty interpreter.|
+|*funcs3.c*|Contain the content of the functions pstr, rotl and rotr of the monty interpreter.|
+|*check_opcode.c*|Contain the function that check in the monty interpreter for found the command in it.|
+
 ## Contribution
 This is a project for [Holberton School](https://www.holbertonschool.com/) by Holberton Students. Pull requests are welcome, if you found a bug, you can report us at the email: [1264@holbertonschool.com](mailto:1264@holbertonschool.com) or [970@holbertonschool.com](mailto:970@holbertonschool.com).
 Please make sure to update tests as appropriate.

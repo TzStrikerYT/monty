@@ -18,6 +18,9 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 -   What is the proper way to use global variables.
 -   How to work with git submodules.
 
+![enter image description here](https://lh3.googleusercontent.com/zwiEUTcNY8JORqS1pM1patosede3xWcnUe4YHQ1B8tPj-rJW7w9JA4LLSEpeMOgZIgopJxKEyfk "stackqueue")
+
+
 # Requirements
 ## Installation
 

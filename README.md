@@ -174,6 +174,115 @@ $ ./monty bytecodes/31.m
 Holberton
 $ 
 ```
+* Implementing rotl and rotr opcode:
+```
+$ cat bytecodes/35.m 
+push 1
+push 2
+push 3
+push 4
+push 5
+push 6
+push 7
+push 8
+push 9
+push 0
+pall
+rotl
+pall
+$ ./monty bytecodes/35.m 
+0
+9
+8
+7
+6
+5
+4
+3
+2
+1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+$
+```
+* Implementing stack and queue opcode:
+```
+$ cat bytecodes/47.m
+queue
+push 1
+push 2
+push 3
+pall
+stack
+push 4
+push 5
+push 6
+pall
+add
+pall
+queue
+push 11111
+add
+pall
+$ ./monty bytecodes/47.m
+1
+2
+3
+6
+5
+4
+1
+2
+3
+11
+4
+1
+2
+3
+15
+1
+2
+3
+11111
+$ 
+```
+* Implementing "holberton" (1000-holberton.bf) opcode:
+```
+$ bf 1000-holberton.bf 
+Holberton
+$ 
+``` 
+
+* Implementing "add tow digits" (1001-add.bf) opcode:
+```
+$ bf ./1001-add.bf
+81
+9$
+```
+
+* Implementing "multiplication" (1002-mul.bf) opcode:
+```
+$ bf 1002-mul.bf
+24
+8$
+```
+
+* Implementing "multiplication level up" (1003-mul.bf) opcode:
+```
+$ bf 1003-mul.bf 
+77
+49
+$ 
+```
+
 
 ## File descriptor
 

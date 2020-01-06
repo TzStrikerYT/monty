@@ -118,3 +118,7 @@ $ ./monty bytecodes/12.m
 1
 $
 ```
+
+## Contribution
+This is a project for [Holberton School](https://www.holbertonschool.com/) by Holberton Students. Pull requests are welcome, if you found a bug, you can report us at the email: [1264@holbertonschool.com](mailto:1264@holbertonschool.com) or [970@holbertonschool.com](mailto:970@holbertonschool.com).
+Please make sure to update tests as appropriate.

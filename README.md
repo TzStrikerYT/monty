@@ -21,6 +21,8 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 ![enter image description here](https://lh3.googleusercontent.com/zwiEUTcNY8JORqS1pM1patosede3xWcnUe4YHQ1B8tPj-rJW7w9JA4LLSEpeMOgZIgopJxKEyfk "stackqueue")
 
 
+**resources:** [https://www.geeksforgeeks.org/stack-data-structure-introduction-program/](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) 
+
 # Requirements
 ## Installation
 

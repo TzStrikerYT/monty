@@ -5,7 +5,7 @@
 
 ## [](https://github.com/TzStrikerYT/monty)Description
 
-
+An interpreter is a program that directly executes instructions written (one by one) in a script or a programming language, without being previously compiled into a machine language program as needed, normally in this process they do not save the result of such instruction translation, this differentiates it from assemblers and compilers.
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
 ## Learning objectives
@@ -120,6 +120,8 @@ $ ./monty bytecodes/12.m
 1
 $
 ```
+## File descriptor
+
 
 ## Contribution
 This is a project for [Holberton School](https://www.holbertonschool.com/) by Holberton Students. Pull requests are welcome, if you found a bug, you can report us at the email: [1264@holbertonschool.com](mailto:1264@holbertonschool.com) or [970@holbertonschool.com](mailto:970@holbertonschool.com).

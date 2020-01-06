@@ -90,4 +90,6 @@ void mod(stack_t **stack, unsigned int n_line);
 void pchar(stack_t **stack, unsigned int n_line);
 void rotl(stack_t **stack, unsigned int n_line);
 void pstr(stack_t **stack, unsigned int n_line);
+void rotr(stack_t **stack, unsigned int n_line);
+
 #endif /* Functions */

@@ -125,6 +125,23 @@ $ ./monty bytecodes/12.m
 1
 $
 ```
+* Implementing sub, div, mul, mod opcode:
+```
+$ cat bytecodes/19.m 
+push 1
+push 2
+push 10
+push 3
+sub
+pall
+$ ./monty bytecodes/19.m 
+7
+2
+1
+$
+``` 
+
+
 ## File descriptor
 
 

@@ -1,4 +1,4 @@
-k# Monty Bytecodes Interpreter
+# Monty Bytecodes Interpreter
 
 
 ![enter image description here](https://lh3.googleusercontent.com/XmvRPsC57FqdwBUPmFjUlJQdwFgzBxbNLQ7AKewPcoKX5rrkmHvUUboWAZ-gIjsQslW2D6YF-G8 "monty")
@@ -16,7 +16,7 @@ k# Monty Bytecodes Interpreter
 -   What is the proper way to use global variables.
 -   How to work with git submodules.
 
-# Requirements 
+# Requirements
 ## Installation
 
 Use the  [git clone](https://github.com/TzStrikerYT/monty.git) to install this repository
@@ -29,3 +29,96 @@ git clone https://github.com/TzStrikerYT/monty.git
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 ```
+
+## Usage
+In the file descriptor you will find the definitions of opcode.
+* Implementing the push and pall opcodes:
+```
+$ cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+$ ./monty bytecodes/00.m
+3
+2
+1
+$
+```
+* Implementing the pint opcode:
+```
+$ cat bytecodes/06.m 
+push 1
+pint
+push 2
+pint
+push 3
+pint
+$ ./monty bytecodes/06.m 
+1
+2
+3
+$ 
+```
+* Implementing the pop opcode:
+```
+$ cat bytecodes/07.m 
+push 1
+push 2
+push 3
+pall
+pop
+pall
+pop
+pall
+pop
+pall
+$ ./monty bytecodes/07.m 
+3
+2
+1
+2
+1
+1
+$ 
+```
+* Implementing swap opcode:
+```
+$ cat bytecodes/09.m 
+push 1
+push 2
+push 3
+pall
+swap
+pall
+$ ./monty bytecodes/09.m 
+3
+2
+1
+2
+3
+1
+$
+```
+* Implementing add opcode:
+```
+$ cat bytecodes/12.m 
+push 1
+push 2
+push 3
+pall
+add
+pall
+
+$ ./monty bytecodes/12.m
+3
+2
+1
+5
+1
+$
+```
+
+## Contribution
+This is a project for [Holberton School](https://www.holbertonschool.com/) by Holberton Students. Pull requests are welcome, if you found a bug, you can report us at the email: [1264@holbertonschool.com](mailto:1264@holbertonschool.com) or [970@holbertonschool.com](mailto:970@holbertonschool.com).
+Please make sure to update tests as appropriate.

@@ -141,6 +141,39 @@ $ ./monty bytecodes/19.m
 $
 ``` 
 
+* Implementing pchar opcode:
+```
+$ cat bytecodes/28.m 
+push 72
+pchar
+$ ./monty bytecodes/28.m 
+H
+$
+```
+* Implementing pstr opcode:
+```
+$ cat bytecodes/31.m 
+push 1
+push 2
+push 3
+push 4
+push 0
+push 110
+push 0
+push 110
+push 111
+push 116
+push 114
+push 101
+push 98
+push 108
+push 111
+push 72
+pstr
+$ ./monty bytecodes/31.m 
+Holberton
+$ 
+```
 
 ## File descriptor
 
